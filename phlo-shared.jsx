@@ -29,15 +29,6 @@ function PhloNav({ active, setActive }) {
           <span style={{ fontFamily: 'var(--font-head)', fontWeight: 700, fontSize: 15, color: 'var(--text)', letterSpacing: '-0.01em' }}>Plantman Insights</span>
         </div>
 
-        {/* Divider */}
-        <div style={{ width: 1, height: 20, background: 'var(--border2)', flexShrink: 0 }}/>
-
-        {/* Client + period */}
-        <div style={{ flexShrink: 0 }}>
-          <span style={{ fontSize: 12, color: 'var(--text-2)', fontWeight: 500 }}>Plantman Equipment</span>
-          <span style={{ fontSize: 11, color: 'var(--text-3)', marginLeft: 8 }}>Q1 2026</span>
-        </div>
-
         {/* Tabs */}
         <nav style={{ display: 'flex', gap: 2, flex: 1, overflowX: 'auto' }}>
           {tabs.map(t => (

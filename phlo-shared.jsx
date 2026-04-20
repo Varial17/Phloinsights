@@ -19,7 +19,7 @@ function PhloNav({ active, setActive }) {
       background: 'rgba(247,247,245,0.96)', backdropFilter: 'blur(12px)',
       borderBottom: '1px solid var(--border)',
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'flex', alignItems: 'center', gap: 32, height: 56 }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 48px', display: 'flex', alignItems: 'center', gap: 24, minHeight: 56 }}>
         {/* Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -30,7 +30,7 @@ function PhloNav({ active, setActive }) {
         </div>
 
         {/* Tabs */}
-        <nav style={{ display: 'flex', gap: 2, flex: 1, overflowX: 'auto' }}>
+        <nav style={{ display: 'flex', gap: 2, flex: '1 1 0', minWidth: 0, flexWrap: 'wrap', alignItems: 'center' }}>
           {tabs.map(t => (
             <button key={t.id} onClick={() => setActive(t.id)} style={{
               background: 'none', border: 'none', cursor: 'pointer',

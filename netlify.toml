@@ -12,7 +12,12 @@
   for = "/*.jsx"
   [headers.values]
     Content-Type = "text/javascript"
-    Cache-Control = "public, max-age=3600, must-revalidate"
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "no-cache"
 
 [[headers]]
   for = "/index.html"
